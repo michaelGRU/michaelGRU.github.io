@@ -79,11 +79,11 @@ function bg_generic() {
     document.getElementById("myImg").src = myPix[randomNum];
 
     var temp = document.getElementById("tableft");
-    var bmyPix = new Array("../img/rand_bg/1.jpeg", "../img/rand_bg/2.jpg","../img/rand_bg/3.jpg","../img/rand_bg/4.jpg","../img/rand_bg/5.png","../img/rand_bg/6.jpg","../img/rand_bg/7.jpg","../img/rand_bg/8.jpg","../img/rand_bg/9.png");
+    var bmyPix = new Array("../img/rand_bg/1.jpeg", "../img/rand_bg/2.jpg","../img/rand_bg/3.jpg","../img/rand_bg/4.png","../img/rand_bg/5.png","../img/rand_bg/6.jpg","../img/rand_bg/7.jpg","../img/rand_bg/8.jpg","../img/rand_bg/9.png", "../img/rand_bg/10.jpg", "../img/rand_bg/11.jpg", "../img/rand_bg/12.jpg");
     var randomNum1 = Math.floor(Math.random() * bmyPix.length);
 
    
-    temp.setAttribute('style', "background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(" + bmyPix[randomNum1] + "); background-size: cover; background-repeat: no-repeat;");
+    temp.setAttribute('style', "background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(" + bmyPix[randomNum1] + "); background-size: cover; background-repeat: no-repeat; background-position: center");
 
 
 
