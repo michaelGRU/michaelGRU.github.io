@@ -73,20 +73,32 @@ function bg_bully() {
 
 function bg_generic() {
 
-    var myPix = new Array("../img/robot/1.png", "../img/robot/2.png", "../img/robot/3.png", "../img/robot/4.png", "../img/robot/5.png", "../img/robot/6.png");
-    var randomNum = Math.floor(Math.random() * myPix.length);
+    var myPix = new Array("../img/robot/1.png", "../img/robot/2.png", "../img/robot/3.png", "../img/robot/4.png", "../img/robot/5.png", "../img/robot/6.png",);
 
-    document.getElementById("myImg").src = myPix[randomNum];
+    var bmyPix = new Array("../img/rand_bg/1.jpeg", "../img/rand_bg/2.jpg","../img/rand_bg/3.jpg","../img/rand_bg/4.png","../img/rand_bg/5.png","../img/rand_bg/6.jpg","../img/rand_bg/7.jpg","../img/rand_bg/8.png","../img/rand_bg/9.png", "../img/rand_bg/10.jpg", "../img/rand_bg/11.jpg", "../img/rand_bg/12.jpg");
 
+    const water_bg = ["../img/rand_bg/1.jpeg", "../img/rand_bg/9.png", "../img/rand_bg/12.jpg"]
+
+    var randomNum = Math.floor(Math.random() * myPix.length); //robot
+    var randomNum1 = Math.floor(Math.random() * bmyPix.length); //bgd
+    
     var temp = document.getElementById("tableft");
-    var bmyPix = new Array("../img/rand_bg/1.jpeg", "../img/rand_bg/2.jpg","../img/rand_bg/3.jpg","../img/rand_bg/4.png","../img/rand_bg/5.png","../img/rand_bg/6.jpg","../img/rand_bg/7.jpg","../img/rand_bg/8.jpg","../img/rand_bg/9.png", "../img/rand_bg/10.jpg", "../img/rand_bg/11.jpg", "../img/rand_bg/12.jpg");
-    var randomNum1 = Math.floor(Math.random() * bmyPix.length);
+    
+    if (water_bg.includes(bmyPix[randomNum1])){
+       
+        temp.setAttribute('style', "background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(" + bmyPix[randomNum1] + "); background-size: cover; background-repeat: no-repeat; background-position: center");
+
+        var wmyPix = new Array("../img/water_robo/1.png", "../img/water_robo/2.png", "../img/water_robo/3.png", "../img/water_robo/4.png"); 
+        var randomNum3 = Math.floor(Math.random() * wmyPix.length);
+       
+        document.getElementById("myImg").src = wmyPix[randomNum3];
+       
+    } else {
+        temp.setAttribute('style', "background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(" + bmyPix[randomNum1] + "); background-size: cover; background-repeat: no-repeat; background-position: center");
+        document.getElementById("myImg").src = myPix[randomNum];
+    }
 
    
-    temp.setAttribute('style', "background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(" + bmyPix[randomNum1] + "); background-size: cover; background-repeat: no-repeat; background-position: center");
-
-
-
 }
 
 
