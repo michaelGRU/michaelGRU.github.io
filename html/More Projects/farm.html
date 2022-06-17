@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Farming</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+            background-color: #F5F5F5;
+
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #F5F5F5;
+
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background-color: #458588;
+            background-image: -webkit-linear-gradient(45deg,
+                    rgba(255, 255, 255, .2) 25%,
+                    transparent 25%,
+                    transparent 50%,
+                    rgba(255, 255, 255, .2) 50%,
+                    rgba(255, 255, 255, .2) 75%,
+                    transparent 75%,
+                    transparent)
+        }
+
+    
+    </style>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+
+    <style>
+        .bold {
+            font-weight: bold;
+        }
+
+        /* html {
+            background-color:  #fffff7;
+            color:#252525;
+            
+        } */
+       
+        body {
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        #pic {
+            background-image: url('../../img/farm.png');
+            height: 350px;
+        }
+
+
+
+       
+    </style>
+</head>
+
+<body>
+
+    <!-- sql database farm -->
+    <div id="farm2" class="tabcontent">
+
+        <div id="pic"></div>
+        <center>
+            <h3 class="bold">SQL Database for Family Farms</h3>
+        </center>
+
+
+        <p class="bold">The problem we try to solve:</p>
+
+        <p>In the world of data-centric decisions, there tends to be information asymmetry between
+
+            big corporations and small businesses whereby the former possess a competitive advantage over
+
+            the latter with better information and more resources. With the increasing risks of COVID-19
+
+            and this imbalance in power favoring big corporations, small local businesses are facing many
+
+            problems regarding their supply chain, consumer behavior, and waste reduction systems.
+
+            The goal for this project is to create a user-friendly database with an interactive interface
+
+            to analyze data from different business functions to improve the production system of a farm,
+
+            boost its sales, and reduce waste. For instance, by tracking and analyzing customer data, farm
+
+            owners can gain insights into the optimal balance between supply and demand. Furthermore, a
+
+            database that tracks employee information can provide useful information about personnel
+
+            efficiency. The database can identify what is lacking in certain divisions and what areas are self
+            sustained
+            without additional investments. Lastly, we can also improve product quality by
+
+            monitoring the health and activity of the farm’s livestock. You can find the source code here: <a
+                href="https://github.com/michaelGRU/SQL_Database" target="_blank">SQL_farm</a></p>
+
+
+
+
+        <br>
+        <center>
+            <p class="bold">Data Science and Business Intelligence System for Family Farms</p>
+        </center>
+        <p>The following write-up covers a research project I did at the information school. I worked with two
+            other
+            graduate students to create a comprehensive data science and business intelligence system for modern
+            family
+            farms. </p>
+
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Overview</a></li>
+                <li><a href="#tabs-2">Data Warehousing</a></li>
+                <li><a href="#tabs-3">Data Mining</a></li>
+                <li><a href="#tabs-4">Text and Web Analytics</a></li>
+                <li><a href="#tabs-5">Future Trends</a></li>
+            </ul>
+            <div id="tabs-1">
+                <p>This report describes a high-level analysis of a Business Intelligence solution we implement
+                    on a local business in the US – Smithfield Farm. Farmers will always
+                    be involved in the whole farming process. However, human involvement should be at a very
+                    high
+                    intelligence level based on the dashboard’s feedback while leaving the most tedious and
+                    laborious
+                    work to AI and machines. <a href="../../externalFile/f1.pdf" target="_blank"><br>Link to Report</a>
+                </p>
+            </div>
+            <div id="tabs-2">
+                <p>The warehouse functions as a repository that enables business users to collect,
+                    centralize, store, perform queries, analyze, report, and visualize data. Data
+                    Warehousing is a powerful tool that Smithfield can leverage to reach its strategic goals. BI
+                    analytics enables precision agriculture via data collection from the Internet of Things
+                    (IoT),
+                    AI
+                    remote sensors, robots, satellites, customers, etc. <br><a href="../externalFile/f2.pdf"
+                        target="_blank">Link to Report</a></p>
+            </div>
+            <div id="tabs-3">
+                <p>We discuss three data mining applications in modern farming: <br>1. Biosecurity and Livestock
+                    Health
+                    Management<br>2. Precisely Interpret Data from the Internet of Things (IoT)<br> 3.
+                    Traceability
+                    of
+                    livestock products<br> <a href="../../externalFile/f3.pdf" target="_blank">Link to Report</a></p>
+            </div>
+            <div id="tabs-4">
+                <p>For family farms, text analytics is the process of extracting meaningful information using
+                    natural
+                    language processing from text, structure or unstructured data, and written communications to
+                    understand farm trends and customer preferences. Especially things like customer opinions on
+                    livestock products and farm experiences. As we learned that ​ 85 - 90 percent of all
+                    corporate
+                    data
+                    is in some kind of unstructured form, and unstructured corporate data is doubling in size
+                    every
+                    18 months. <br><a href="../../externalFile/f4.pdf" target="_blank">Link to Report</a>​</p>
+            </div>
+            <div id="tabs-5">
+                <p>By finding multiple links between an action and an outcome, we believe Decision Intelligence
+                    will enable the next information renaissance. The ultimate goal of Decision Intelligence is
+                    to
+                    find
+                    the mysterious unknown between the present and the future based on big data analysis. The
+                    application can be used not just in business but in personal relationships, agriculture,
+                    politics,
+                    military, and practically any field one can think of. It is not a surprise that many regard
+                    Decision
+                    Intelligence as the next form of artificial intelligence or ML++.<br><a
+                        href="../../externalFile/f5.pdf" target="_blank">Link to Report</a></p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

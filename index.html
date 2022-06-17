@@ -1,0 +1,415 @@
+<!--
+Designed & Built by SMW under MIT license
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wang S.M</title>
+    <link rel="icon" href="./img/linux.ico">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/system.css">
+
+    <!-- file icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+
+    <script>
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (screen.width <= 720 || isMobile) {
+
+            window.alert('Hello there! Are you on a mobile device? My big AI brain detected that your screen is too small, and this website is not currently mobile compatible. You will be redirected to a primitive version. I recommend you to use a laptop to view the site if possible.');
+
+            window.location = './index_no_js.html';
+
+        }
+        if (window.document.documentMode) {
+            window.alert('Internet Explorer Detected. This website is not IE compatible. You will be redirected to a primitive version.');
+            window.location = './index_no_js.html';
+
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div id="main">
+        <div class='spinner-wrapper'>
+            <!-- <div class="spinner"></div> -->
+            <img src="./img/open10.gif">
+
+        </div>
+
+        <div id="tableft" class="tab noselect">
+            <div class="readmebar">&nbsp;</div>
+            <div class="tablinks"
+                onclick="openElement(event, 'readme'); displayIframe('readme', 'readme.html'); bg_rm()" id="defaultOpen"
+                style="height: 24px; font-size: 16px;background-color: #272822; cursor: pointer;"><i
+                    class="fab fa-markdown">
+                    <span style="font-family: 'Titillium Web', Arial, Helvetica, sans-serif;">README.md</span></i></div>
+            <div class="readmebar">&nbsp;</div>
+
+
+            <!-- ------------------------------------------------------------------------------------------------- -->
+            <div class="divtitle" style="cursor:default; height: 14px;">&nbsp;</div>
+            <div id="sna" class="tablinks accordion divtitle"><i id="divtitle1" class="fas fa-folder"> <span
+                        class="file_font">Research Portfolio</span></i></div>
+            <div class="panel">
+
+
+
+                <button class="tablinks"
+                    onclick="openElement(event, 'coc'); displayIframe('coc', 'Research Portfolio/summary.html'); bg_sum()"><i
+                        class="far fa-file-alt"></i> Portfolio Summary</button>
+
+                <button class="tablinks"
+                    onclick="openElement(event, 'sum'); displayIframe('sum', 'Research Portfolio/homeless.html'); bg_home()"><i
+                        class="far fa-file-alt"></i> US Homeless
+                    Care Program</button>
+                <button class="tablinks"
+                    onclick="openElement(event, 'ethics'); displayIframe('ethics', 'Research Portfolio/ethics.pdf'); bg_sur()"><i
+                        class="far fa-file-alt"></i>
+                    Big Data
+                    Surveillance Ethics</button>
+                <button class="tablinks"
+                    onclick="openElement(event, 'dis'); displayIframe('dis', 'Research Portfolio/RUS_IRA.pdf'); bg_dis()"><i
+                        class="far fa-file-alt"></i>
+                    Twitter Disinformation Network</button>
+
+                <button class="tablinks"
+                    onclick="openElement(event, 'bully'); displayIframe('bully', 'Research Portfolio/cyberbullying.pdf'); bg_bully()"><i
+                        class="far fa-file-alt"></i>
+                    Cyberbullying Classification</button>
+
+
+            </div>
+            <!-- ------------------------------------------------------------------------------------------------- -->
+            <div class="divtitle" style="cursor:default; height: 14px;">&nbsp;</div>
+            <div id="ss" class="tablinks accordion divtitle"><i id="divtitle2" class="fas fa-folder"> <span
+                        class="file_font">Computing</span></i></div>
+            <div class="panel">
+                <button class="tablinks"
+                    onclick="openElement(event, 'java'); displayIframe('java', 'Computing/java_nlp.html'); bg_generic()"><i
+                        class="far fa-file-alt"></i> Text
+                    Comparison Algorithm</button>
+
+                <button class="tablinks"
+                    onclick="openElement(event, 'db'); displayIframe('db', 'Computing/mechanical_model.html'); bg_generic()"><i
+                        class="far fa-file-alt"></i>
+                    Modeling Nonlinear Dynamics</button>
+
+
+
+                <button class="tablinks"
+                    onclick="openElement(event, 'ergm'); displayIframe('ergm', 'Computing/ergm.pdf');bg_generic()"><i
+                        class="far fa-file-alt"></i>
+                    Stochastic Models: ERGM</button>
+
+                <button class="tablinks"
+                    onclick="openElement(event, 'higgs'); displayIframe('higgs','Computing/higgs.html');bg_generic()"><i
+                        class="far fa-file-alt"></i>
+                    Statistical Physics</button>
+
+
+
+
+
+            </div>
+            <!-- ------------------------------------------------------------------------------------------------- -->
+            <div class="divtitle" style="cursor:default; height: 14px;">&nbsp;</div>
+            <div id="ds" class="tablinks accordion divtitle"><i id="divtitle3" class="fas fa-folder"> <span
+                        class="file_font">More Projects</span></i>
+            </div>
+            <div class="panel">
+                <button class="tablinks"
+                    onclick="openElement(event, 'farm'); displayIframe('farm', 'More Projects/farm.html');bg_generic()"><i
+                        class="far fa-file-alt"></i>
+                    Digital Farming</button>
+                <button class="tablinks"
+                    onclick="openElement(event, 'soc'); displayIframe('soc', 'More Projects/classical.html');bg_generic()"><i
+                        class="far fa-file-alt"></i>
+                    Sociological
+                    Theories</button>
+
+                <button class="tablinks"
+                    onclick="openElement(event, 'redistribution'); displayIframe('redistribution', 'More Projects/redistribute.html');bg_generic()"><i
+                        class="far fa-file-alt"></i>
+                    Social Redistribution</button>
+
+                <button class="tablinks"
+                    onclick="openElement(event, 'ghub'); displayIframe('ghub', 'More Projects/github_sna.html');bg_generic()"><i
+                        class="far fa-file-alt"></i>
+                    Github Network</button>
+
+                <button class="tablinks"
+                    onclick="openElement(event, 'isis'); displayIframe('isis', 'More Projects/tweet_isis.html');bg_generic()"><i
+                        class="far fa-file-alt"></i>
+                    Anti-ISIS Tweets</button>
+                <button class="tablinks"
+                    onclick="openElement(event, 'nb'); displayIframe('nb', 'More Projects/media_detect.html');bg_generic()"><i
+                        class="far fa-file-alt"></i>
+                    Misinformation Classification</button>
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="divtitle" style="cursor:default; height: 14px;">&nbsp;</div>
+
+            <audio id="audio" style="display:none" src="./img/test.mp3" type="audio/mp3"></audio>
+
+            <div id="track">
+
+                <span style="color: black; font-weight: bold;">Current File
+                    Path:</span> <br>
+                <span id="pwd"></span> <span style="color: black;"><i class="fab fa-linux blue "></i>
+
+            </div>
+
+            <div id="robot">
+                <center>
+                    <br><br><br>
+                    <img draggable="false" (dragstart)="false;" class="unselectable" id="myImg" class="grow"
+                        src="./img/robot.png"> <br>
+
+
+
+                </center>
+            </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close blink_me">&times;</span>
+
+
+
+                <div class="l-wrapper">
+                    <div class="l-contents">
+
+                        <table align="center">
+
+                            <tr>
+                                <th>Project</th>
+                                <th>Methodologies</th>
+                                <th>Language</th>
+                                <th>Domain</th>
+                            </tr>
+                            <tr>
+                                <td>US Homeless Care Program</td>
+                                <td>Community Detection, Topic Modeling (LDA, STM), Text Vectorization</td>
+                                <td>Python, R</td>
+                                <td>Social Network Analysis, NLP, Social Media</td>
+                            </tr>
+                            <tr>
+                                <td>Disinformation Text Network</td>
+                                <td>Community Detection, Hashtag Network Analysis </td>
+                                <td>Python, R</td>
+                                <td>Social Network Analysis, NLP, Social Media</td>
+                            </tr>
+                            <tr>
+                                <td>Github Follower Network</td>
+                                <td>Data Programming, Social Media API</td>
+                                <td>Python</td>
+                                <td>Social Network Analysis, Social Media</td>
+                            </tr>
+                            <tr>
+                                <td>Stochastic Models: ERGM</td>
+                                <td>Exponential Random Graph Model</td>
+                                <td>R</td>
+                                <td>Social Network Analysis</td>
+                            </tr>
+                            <tr>
+                                <td>Big Data Surveillance Ethics</td>
+                                <td>Data Ethics, US Law, Philosophy</td>
+                                <td>English</td>
+                                <td>Social and Information Science</td>
+                            </tr>
+                            <tr>
+                                <td>Social Redistribution</td>
+                                <td>Data programming, Regression Models</td>
+                                <td>R</td>
+                                <td>Social and Information Science</td>
+                            </tr>
+                            <tr>
+                                <td>Sociological Theories</td>
+                                <td>Classical Sociology</td>
+                                <td>English</td>
+                                <td>Social and Information Science</td>
+                            </tr>
+                            <tr>
+                                <td>Digital Farming</td>
+                                <td>Database Design, Query, ERD, Stored Procedures</td>
+                                <td>SQL</td>
+                                <td>Social and Information Science</td>
+                            </tr>
+
+                            <tr>
+                                <td>Cyberbullying Classification</td>
+                                <td> Deep Learning (RNN, LSTM), ML (XGBoost, SVM, Trees, Ensemble)
+                                </td>
+                                <td>Python</td>
+                                <td>NLP, Social Media</td>
+                            </tr>
+
+                            <tr>
+                                <td>Misinformation Classification</td>
+                                <td> Machine Learning, Naive Bayes, Cross Validation
+                                </td>
+                                <td>Python</td>
+                                <td>NLP, Social Media</td>
+                            </tr>
+                            <tr>
+                                <td>Analyzing Anti-ISIS Tweets</td>
+                                <td>Sentiment Analysis, Co-occurrence Networks</td>
+                                <td>Python</td>
+                                <td>NLP, Social Media</td>
+                            </tr>
+                            <tr>
+                                <td>Text Comparison Algorithm</td>
+                                <td>Data Programming, Data Structures and Algorithms</td>
+                                <td>Java</td>
+                                <td>NLP</td>
+                            </tr>
+                            <div id="caption">I designed and built this website to showcase my work in
+                                <span class="blue">social & computer science</span>. My work leverages applied mathematics,
+                                computational methods, and data visualization to answer social science questions.
+
+                            </div>
+                        </table>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- ------------------------------------------------------------------------------------------------- -->
+
+        <!-- <div id="am" class="tablinks accordion divtitle"><i id="divtitle4" class="fas fa-folder"> <span
+                        class="file_font">Applied Mathematics and Statistics</span></i>
+            </div>
+            <div class="panel">
+
+               
+                <button class="tablinks" onclick="openElement(event, 'db')"><i class="far fa-file-alt"></i>
+                    Modeling Nonlinear Dynamics</button>
+                    <button class="tablinks" onclick="openElement(event, 'higgs')"><i class="far fa-file-alt"></i>
+                        Computational Statistical Physics</button>
+                   
+            </div>
+            <div class="divtitle" style="cursor:default;">&nbsp;</div> -->
+        <!-- ------------------------------------------------------------------------------------------------- -->
+
+        <!--end of tab (left)-->
+        <!-- ------------------------------------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------------------------------------- -->
+        <!-- generate content on the right -->
+        <!-- read me -->
+        <div id="readme" class="tabcontent">
+
+        </div>
+
+
+        <div id="sum" class="tabcontent">
+
+        </div>
+
+
+        <div id="dis" class="tabcontent">
+
+        </div>
+
+
+
+
+
+        <!-- social science -->
+        <div id="coc" class="tabcontent"></div>
+
+
+
+        <div id="ghub" class="tabcontent">
+
+        </div>
+
+        <div id="ergm" class="tabcontent"></div>
+
+
+
+
+        <!-- data science -->
+        <div id="redistribution" class="tabcontent"></div>
+
+        <div id="soc" class="tabcontent">
+
+        </div>
+
+
+        <div id="isis" class="tabcontent">
+
+        </div>
+
+        <div id="bully" class="tabcontent"></div>
+
+        <div id="nb" class="tabcontent">
+
+        </div>
+
+        <!-- java text comparison -->
+        <div id="java" class="tabcontent"></div>
+
+        <div id="farm" class="tabcontent">
+
+        </div>
+        <div id="db" class="tabcontent"></div>
+        <div id="more" class="tabcontent"></div>
+
+        <div id="higgs" class="tabcontent">
+
+        </div>
+
+
+        <div id="ethics" , class="tabcontent"></div>
+    </div>
+
+    <!-- end of main content -->
+    <!--------------- JavaScript --------------->
+    <noscript>
+        <style type="text/css">
+            #main {
+                display: none;
+            }
+
+            .noscriptmsg {
+                font-size: 40px;
+                font-weight: bold;
+            }
+        </style>
+        <div class="noscriptmsg">
+            HELLO! It appears that either you don't have JavaScript enabled or your browser doesn't support
+            JavaScript.<br>
+            If this is done on purpose, please try this <a href='./index_no_js.html'>JavaScript-free page</a>.
+
+        </div>
+    </noscript>
+
+
+
+    <script src="./js/system.js"></script>
+
+
+
+
+</body>
+
+</html>

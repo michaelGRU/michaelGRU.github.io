@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* width */
+            ::-webkit-scrollbar {
+                width: 10px;
+                background-color: #F5F5F5;
+    
+            }
+    
+            /* Track */
+            ::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                background-color: #F5F5F5;
+    
+            }
+    
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background-color: #458588;
+                background-image: -webkit-linear-gradient(45deg,
+                        rgba(255, 255, 255, .2) 25%,
+                        transparent 25%,
+                        transparent 50%,
+                        rgba(255, 255, 255, .2) 50%,
+                        rgba(255, 255, 255, .2) 75%,
+                        transparent 75%,
+                        transparent)
+            }
+    
+        
+        </style>
+        <style>
+            @font-face {
+                font-family: 'TTSquaresCondensed-Thin';
+                src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/39132/TTSquaresCondensed-Thin.eot');
+                src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/39132/TTSquaresCondensed-Thin.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/39132/TTSquaresCondensed-Thin.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/39132/TTSquaresCondensed-Thin.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/39132/TTSquaresCondensed-Thin.ttf') format('truetype');
+            }
+            * {
+                box-sizing: border-box;
+            }
+            html { 
+                background: url(../img/java.png) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            }
+            body{
+
+
+                font-family: 'TTSquaresCondensed-Thin', monospace;
+            }
+
+            #myInput {
+                width: 100%;
+                font-size: medium;
+                padding: 12px 20px 12px 12px;
+                border: 1px solid #ddd;
+                margin-bottom: 12px;
+                font-size: medium;
+            }
+
+            #myUL {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                opacity: 0.7;
+
+            }
+
+            #myUL li a {
+                border: 1px solid #ddd;
+                margin-top: -1px; /* Prevent double borders */
+                background-color: #f6f6f6;
+                padding: 10px;
+                text-decoration: none;
+                font-size: 18px;
+                color: black;
+                display: block;
+                font-size: medium;
+
+            }
+
+            #myUL li a:hover:not(.header) {
+                background-color: #eee;
+            }
+            h2{
+                color:azure;
+                font-size: 30px;
+
+            }
+            a{
+                text-decoration: none;
+                color:white;
+            }
+            #title{
+                font-size: medium;
+            }
+
+
+
+            /*page transition*/
+            .wrapper{
+                animation: transitionIn 3s;
+
+            }
+
+            @keyframes transitionIn {
+                from{
+                    opacity:0;
+                    transform:rotateY(-10px);
+                }
+                to{
+                    opacity: 1;
+                    transform:rotateY(0);
+
+                }
+            }
+            @keyframes toColor {
+                0%    { -webkit-filter: grayscale(100%); filter: grayscale(100%); }
+                25%   { -webkit-filter: grayscale(75%); filter: grayscale(75%); }
+                50%   { -webkit-filter: grayscale(50%); filter: grayscale(50%); }
+                75%   { -webkit-filter: grayscale(25%); filter: grayscale(25%); }
+                100%  { -webkit-filter: grayscale(0%); filter: grayscale(0%); }
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- <h2><a href="../index.html#ss8">&larr; GO BACK TO MAIN</a></h2> -->
+            <center><h2 id="title">JAVA CODE BANK (github@michaelGRU)</h2></center>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for keywords.." title="Type in a keyword">
+
+            <ul id="myUL">
+                 <li><a href="../externalFile/javaCodeBank/copyArray.java" target="_blank">array Deep Copy</a></li>
+                 <li><a href="../externalFile/javaCodeBank/arrayFindHighestLowest.java" target="_blank">array Highest and Lowest Element </a></li>
+                <li><a href="../externalFile/javaCodeBank/arrayFindAverage.java" target="_blank">array Sum and Average</a></li>
+                <li><a href="../externalFile/javaCodeBank/compareTwoArrays.java" target="_blank">array Compare 2 Arrays</a></li>
+                 <li><a href="../externalFile/javaCodeBank/SearchForElement.java" target="_blank">array Find a certain element</a></li>
+                 <li><a href="../externalFile/javaCodeBank/ArrayBasics.java" target="_blank">array Loop through array</a></li>
+                <li><a href="../externalFile/javaCodeBank/SortArray.java" target="_blank">array sorted</a></li>
+                
+                
+                
+                
+                
+                
+                <li><a href="../externalFile/javaCodeBank/MultidimensionalArrays.java" target="_blank">Multi-Dimensional Array</a></li>
+                <li><a href="../externalFile/javaCodeBank/mergeSortedArrays.java" target="_blank">Merge Sorted Arrays</a></li>
+               
+                <li><a href="../externalFile/javaCodeBank/ConvertStringtoInt.java" target="_blank">Convert String to Int without using parseInt()</a></li>
+                <li><a href="../externalFile/javaCodeBank/FileAnalysis.java" target="_blank">File input, output and Analysis</a></li>
+                <li><a href="../externalFile/javaCodeBank/FractionSum.java" target="_blank">Fraction sum</a></li>
+                <li><a href="../externalFile/javaCodeBank/MathLib.java" target="_blank">Java Math library</a></li>
+               <li><a href="../externalFile/javaCodeBank/MathTutor.java" target="_blank">Math tutor</a></li>
+                 <li><a href="../externalFile/javaCodeBank/NumericPattern.java" target="_blank">Numeric pattern</a></li>
+                <li><a href="../externalFile/javaCodeBank/NumericPatternGame.java" target="_blank">Numeric pattern game</a></li> 
+                <li><a href="../externalFile/javaCodeBank/RandomNum.java" target="_blank">Random numbers</a></li>
+                <li><a href="../externalFile/javaCodeBank/StringFormating.java" target="_blank">String formatting</a></li>
+                <li><a href="../externalFile/javaCodeBank/SwapVariables.java" target="_blank">Swapping variables</a></li>
+                 <li><a href="../externalFile/javaCodeBank/getLargestDigitInaNumber.java" target="_blank">Get the largest digit in a number</a></li>
+                <li><a href="../externalFile/javaCodeBank/scannerInput.java" target="_blank">get input from the user using Scanner</a></li>
+                
+
+
+
+            </ul>
+        </div>
+        <script>
+            //https://www.w3schools.com/howto/howto_js_search_menu.asp
+            function myFunction() {
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName("li");
+                for (i = 0; i < li.length; i++) {
+                    a = li[i].getElementsByTagName("a")[0];
+                    txtValue = a.textContent || a.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        li[i].style.display = "";
+                    } else {
+                        li[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+
+    </body>
+</html>

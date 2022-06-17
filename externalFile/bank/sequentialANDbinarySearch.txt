@@ -1,0 +1,46 @@
+
+import java.util.Arrays;
+
+/**
+ *
+ * @author michaelGRU
+ *
+ * Sequential and Binary Search 
+ */
+public class Search {
+
+    public static void main(String[] args) {
+        int[] numbers = {1,2,3,4,5};
+        System.out.println(sequentialSearch(numbers,12));
+        System.out.println(binarySearch(numbers,31));
+
+    }
+    public static boolean sequentialSearch(int[] array, int value) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == value) {
+                return true;
+            }
+        }
+        return false;
+    }
+   public static boolean binarySearch(int[] array, int value) {
+        //the array has to be sorted!!! to use thid method 
+
+        int first = 0, last = array.length - 1; //boundary of the search space 
+
+        while (first <= last) {
+            int middle = (first + last) / 2;
+            if (array[middle] == value) {
+                return true;
+            } else if (value > array[middle]) { //search the last half 
+                first = middle + 1;
+            } else { //search the first half 
+                last = middle - 1;
+            }
+        }
+        return false;
+    }
+    
+  
+
+}

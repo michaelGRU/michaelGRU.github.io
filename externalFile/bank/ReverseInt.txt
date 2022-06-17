@@ -1,0 +1,32 @@
+
+
+/**
+ *
+ * @author michaelGRU
+ */
+public class ReverseInt {
+
+   
+    public static void main(String[] args) {
+        System.out.println(reverseInt(12345));
+        
+    }
+    
+    
+    public static int reverseInt(int num){
+        
+        long reversed = 0;
+        
+        while(num != 0){
+            reversed = reversed * 10 + num % 10;
+            num /= 10;
+            
+            if(reversed > Integer.MAX_VALUE || reversed < Integer.MIN_VALUE){
+                return 0;
+            }
+        }
+        return (int)reversed;
+    }
+    
+    
+}

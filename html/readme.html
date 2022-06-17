@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>READ ME</title>
+    <link rel="stylesheet" href="../css/readmoi.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- <script src="https://kit.fontawesome.com/bb41fba50f.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.min.css" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"></script>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+            background-color: #F5F5F5;
+
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            background-color: #F5F5F5;
+
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background-color: #458588;
+            background-image: -webkit-linear-gradient(45deg,
+                    rgba(255, 255, 255, .2) 25%,
+                    transparent 25%,
+                    transparent 50%,
+                    rgba(255, 255, 255, .2) 50%,
+                    rgba(255, 255, 255, .2) 75%,
+                    transparent 75%,
+                    transparent)
+        }
+    </style>
+    <style>
+        .fa:hover {
+            transform: rotate(360deg);
+        }
+
+        .fa {
+            transition: transform .7s ease-in-out;
+        }
+
+        .hover_me:hover {
+            color: white;
+        }
+
+        hr {
+            background-color: white;
+            height: 1px;
+            border: 0;
+        }
+
+        h3 {
+            font-size: 1.1vw;
+        }
+
+        .readmebar {
+            height: 20px;
+        }
+
+        .level {
+            font-size: 16px;
+            font-family: 'Titillium Web', Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0
+        }
+
+        .blink_3 {
+            animation: blinker 1s;
+            animation-iteration-count: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="readmebar">&nbsp;</div>
+    <div class="highlight level">Shouyang Michael Wang <a href="https://github.com/michaelgru" target="_blank"><i
+                class="fa fa-github hover_me"></i></a> <a href="https://github.com/michaelgru" target="_blank"
+            class="hover_me">michaelgru</a>
+    </div>
+    <div class="readmebar">&nbsp;</div>
+
+
+
+
+
+    <hr>
+
+
+
+    <div id="research_skills" class="tabcontent">
+
+        <div id="mynetwork" class="spec" style="cursor: pointer;"></div>
+
+    </div>
+
+    <div id="about_me" class="tabcontent">
+
+        <div id="about_me_div" class="spec" style="cursor: default;">
+
+            <div id="about_me_text">I have a background in <span class="highlight">mathematics</span> and <span
+                    class="highlight">data programming</span> – my formal education is in <span
+                    class="highlight">physics</span>, <span class="highlight">computer</span> &
+                <span class="highlight">data science</span>. I research information challenges on <span
+                    class="highlight">social media</span> by applying <span class="highlight">machine
+                    learning</span> and <span class="highlight">social network analysis</span> techniques. More
+                specifically, I focus on <span class="highlight">NLP</span> and <span class="highlight">stochastic
+                    network modeling</span>. My specialization is in mining <span class="highlight">large-scale
+                    social data</span> that could assist <span class="highlight">public policy
+                    decision-making</span>. I hold a master's degree from the UW Information School (advised by Dr.
+                Zack Almquist and Dr. Emma Spiro), where I took courses in machine learning, social statistics, data
+                programming, database and social network analysis - my cumulative GPA was 4.0 on a scale of 4.0.
+                <br><br>
+
+                <span>Email </span><span>smw20@pm.me</span><br>
+                <span>PGP key </span><a href="../public key/key.asc" target="_blank">7DEB
+                    7531 FCE4 BA56 16B8 2FDD D529 9A15 9C86 18DE</a><br>
+            </div>
+            <!-- #CF7EA9
+            rgb(255, 241, 118)
+            #78CF8A -->
+        </div>
+
+    </div>
+
+
+
+
+
+    <div id="contact_info" class="tabcontent">
+        <div id="contact" class="spec" style="cursor: default;">
+
+            <div id="contact_text">
+
+
+                <span class="highlight">Wang, S. M. (2022). “An Ethical Approach to Big Data Surveillance.” ASA News
+                    & Notes, June 2022; and forthcoming Reflections on Risk, Volume VII (2023).</span>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <button class="tablink" onclick="tab_switcher(event, 'research_skills')" id="defaultOpen">Skills</button>
+    <button id="aboutme" class="tablink" onclick="tab_switcher(event, 'about_me');">About Me</button>
+    <button class="tablink" onclick="tab_switcher(event, 'contact_info')">Publication</button>
+
+
+    <!-- <audio id="audio2" style="display:none" src="../img/welcome.mp3"></audio> -->
+
+
+    <script src="../js/skill_visual.js"></script>
+
+
+    <script>
+        // global_click = 0;
+        // function playsound2() {
+        //     var audio = document.getElementById("audio2");
+        //     if (global_click == 0) {
+        //         audio.play();
+
+        //     }
+        //     global_click++;
+        // }
+
+
+        function tab_switcher(evt, tab_name) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tab_name).style.display = "block";
+
+            evt.currentTarget.className += " active";
+
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+
+
+
+
+</body>
+
+</html>

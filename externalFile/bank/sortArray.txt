@@ -1,0 +1,60 @@
+import java.util.Arrays;
+
+/**
+ *
+ * @author michaelGRU
+ *
+ * The program performs a selection sort on an int array The array is sorted in
+ * ascending order
+ */
+public class sortArray {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {1, 3, 2, 9, 5};
+
+       
+        System.out.println(Arrays.toString(method1(numbers)));
+         System.out.println(Arrays.toString(method2(numbers)));
+
+    }
+    
+    public static int[] method1(int[] numbers){
+        int temp;
+        boolean again = true;
+        while(again){
+            again = false;
+            for (int i = 0; i < numbers.length - 1; i++) {
+                if (numbers[i] > numbers[i + 1]) {
+                    temp = numbers[i + 1];
+                    numbers[i + 1] = numbers[i];
+                    numbers[i] = temp;
+                    again = true;
+
+                }
+            }
+        }
+        return numbers;
+    }
+    
+    public static int[] method2(int[] array){
+        int i, index, minIndex, minValue;
+
+        for (i = 0; i < (array.length - 1); i++) {
+            minIndex = i;
+            minValue = array[i];
+            for (index = i + 1; index < array.length; index++) {
+                if (array[index] < minValue) {
+                    minValue = array[index];
+                    minIndex = index;
+                }
+            }
+            array[minIndex] = array[i];
+            array[i] = minValue;
+        }
+        return array;
+    }
+    
+    
+
+}
