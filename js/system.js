@@ -88,7 +88,7 @@ function bg_generic() {
        
         temp.setAttribute('style', "background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(" + bmyPix[randomNum1] + "); background-size: cover; background-repeat: no-repeat; background-position: center");
 
-        var wmyPix = new Array("../img/water_robo/1.png", "../img/water_robo/2.png", "../img/water_robo/3.png", "../img/water_robo/4.png"); 
+        var wmyPix = new Array("../img/water_robo/1.png", "../img/water_robo/2.png", "../img/water_robo/3.png"); 
         var randomNum3 = Math.floor(Math.random() * wmyPix.length);
        
         document.getElementById("myImg").src = wmyPix[randomNum3];
