@@ -73,7 +73,7 @@ function bg_bully() {
 
 function bg_generic() {
 
-    var myPix = new Array("../img/robot/1.png", "../img/robot/2.png", "../img/robot/3.png", "../img/robot/4.png", "../img/robot/5.png", "../img/robot/6.png",);
+    var myPix = new Array("../img/robot/1.png", "../img/robot/2.png", "../img/robot/3.png", "../img/robot/5.png", "../img/robot/6.png",);
 
     var bmyPix = new Array("../img/rand_bg/1.jpeg", "../img/rand_bg/2.jpg","../img/rand_bg/3.jpg","../img/rand_bg/4.png","../img/rand_bg/5.png","../img/rand_bg/6.jpg","../img/rand_bg/7.jpg","../img/rand_bg/8.png","../img/rand_bg/9.png", "../img/rand_bg/10.jpg", "../img/rand_bg/11.jpg", "../img/rand_bg/12.jpg");
 
