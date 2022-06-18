@@ -55,12 +55,10 @@ a {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 80%;
+   
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: justify;
-    font-size: 1.0vw;
-    color: white;
+    font-size: 1.2vw;
 }
 
 
