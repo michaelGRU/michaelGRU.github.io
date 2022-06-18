@@ -105,31 +105,6 @@ function bg_generic() {
 
 
 
-global_click = 0;
-
-function playsound() {
-    var audio = document.getElementById("audio");
-    if (global_click == 0) {
-        audio.play();
-    }
-    global_click++;
-
-
-    // document.getElementById("typewriter").style.display = "none";
-    // document.getElementById("filesys").style.display = "block";
-
-
-    // document.getElementById("typewriter").style.cursor = "pointer";
-    // document.getElementById("typewriter").onclick = function(){
-    //     var audio = document.getElementById("audio1");
-    //     if (global_click1 == 0) {
-    //         audio.play();
-    //     }
-    //     global_click1++;
-    //     document.getElementById("typewriter").innerHTML = ""
-    //     document.getElementById("typewriter").style.cursor = "default";
-    // }
-}
 
 
 
@@ -215,8 +190,7 @@ var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function () {
-    document.getElementById("myImg").src = "../img/robo_glass.png"
-    playsound();
+    document.getElementById("myImg").src = "../img/bot_aboutme.png";
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
