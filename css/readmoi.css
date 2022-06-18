@@ -302,4 +302,5 @@ span {
     /* color:rgba(104, 160, 176); */
     font-weight: bold;
     color:azure;
+    text-shadow: 1px 1px 1px 1px azure;
 }
