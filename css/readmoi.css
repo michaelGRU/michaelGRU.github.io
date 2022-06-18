@@ -166,7 +166,7 @@ credit: https://codepen.io/ChemBioScripting/pen/vgjXyz */
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 1080px;
+    max-width: 860px;
 }
 
 .unselectable {
@@ -254,7 +254,7 @@ credit: https://codepen.io/ChemBioScripting/pen/vgjXyz */
     font-size: 20px;
     text-align: left;
     padding-bottom: 40px;
-    width: 1080px;
+    width: 90%;
 
 
 
@@ -265,7 +265,7 @@ table {
     font-size: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 1080px;
+    width: 90%;
 
 
 
