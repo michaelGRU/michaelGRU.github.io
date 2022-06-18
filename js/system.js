@@ -35,7 +35,7 @@ function displayIframe(id, filename) {
 }
 
 function bg_rm() {
-
+    document.getElementById("myImg").src = "../img/bot_aboutme.png";
     var temp = document.getElementById("tableft");
     temp.setAttribute('style', "background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../img/Picture1.png'); background-size: cover; background-repeat: no-repeat;  background-position: center;")
 }
