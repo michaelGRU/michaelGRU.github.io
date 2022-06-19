@@ -1,5 +1,5 @@
 
-drawGraph("easeOutQuint");
+drawGraph();
 nodeFlash(nodes.get("My Skills"), 6);
 
 // initialize global variables.
@@ -13,7 +13,7 @@ var highlightActive = false;
 
 
 // This method is responsible for drawing the graph, returns the drawn network
-function drawGraph(easingType) {
+function drawGraph() {
     var container = document.getElementById('mynetwork');
 
     var big = 25;
@@ -125,20 +125,7 @@ function drawGraph(easingType) {
     network = new vis.Network(container, data, options);
 
 
-    network.once("beforeDrawing", function () {
-        network.focus("My Skills", {
-            scale: 12
-        });
-    });
-    network.once("afterDrawing", function () {
-        network.fit({
-            animation: {
-                duration: 3000,
-                easingFunction: easingType
-            }
-        });
-    });
-
+  
 
 
     // get a JSON object
