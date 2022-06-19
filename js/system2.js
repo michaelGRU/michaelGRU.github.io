@@ -113,7 +113,7 @@ function drawGraph() {
             "stabilization": {
                 "enabled": true,
                 "fit": true,
-                "iterations": 10000,
+                "iterations": 1000,
                 "onlyDynamicEdges": false,
                 "updateInterval": 50
             }, 
