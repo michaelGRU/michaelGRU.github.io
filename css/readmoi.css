@@ -85,7 +85,7 @@ a {
     border: none;
     outline: none;
     cursor: pointer;
-    height: 5vh;
+    height: 10vh;
     width: 33.33%;
     color: gray;
     /* background of button when not active */
@@ -93,7 +93,7 @@ a {
 
 
     font-size: 2vh;
-    padding-top: 25px;
+   
 }
 
 .tablink:hover {

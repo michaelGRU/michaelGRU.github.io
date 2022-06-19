@@ -19,45 +19,45 @@ function drawGraph() {
     var big = 25;
 
     // parsing and collecting nodes and edges from the python
-    nodes = new vis.DataSet([{ "color": "rgba(255,0,0, 0.95)", "font": { "color": "white" }, "id": "My Skills", "label": "", "image": "../img/robot.png", "shape": "image", "size": 66, 'url': 'https://michaelgru.github.io/', group: 0},
+    nodes = new vis.DataSet([{"font": { "color": "white" }, "id": "My Skills", "label": "", "image": "../img/robot.png", "shape": "image", "size": 66, 'url': 'https://michaelgru.github.io/', group: 0},
 
-    { "color": "rgb(255, 241, 118)", "font": { size: big, "color": "white", strokeWidth: 1, strokeColor: 'white'}, "id": "Social Sciences", "label": "Social Sciences", "shape": "star", group: 1},
+    {"font": { size: big, "color": "white", strokeWidth: 1, strokeColor: 'white'}, "id": "Social Sciences", "label": "Social Sciences", "shape": "star", group: 1},
 
-    { "color": "#78CF8A", "font": { size: big, "color": "white", strokeWidth: 1, strokeColor: 'white'}, "id": "Mathematics", "label": "Mathematics", "shape": "star", group: 2 },
+    {"font": { size: big, "color": "white", strokeWidth: 1, strokeColor: 'white'}, "id": "Mathematics", "label": "Mathematics", "shape": "star", group: 2 },
 
-    { "color": "#A6E22E", "font": { size: big, "color": "white", strokeWidth: 1, strokeColor: 'white'}, "id": "Computer Science", "label": "Computer Science", "shape": "star", group: 3 },
+    {"font": { size: big, "color": "white", strokeWidth: 1, strokeColor: 'white'}, "id": "Computer Science", "label": "Computer Science", "shape": "star", group: 3 },
 
-    { "color": "#A6E22E", "font": { "color": "white" }, "id": "Python", "image": "icon/python.png", "label": "Python", "shape": "image", "size": 10, group: 3 },
+    {"font": { "color": "white" }, "id": "Python", "image": "icon/python.png", "label": "Python", "shape": "image", "size": 10, group: 3 },
 
-    { "color": "#A6E22E", "font": { "color": "white" }, "id": "R", "image": "icon/R.png", "label": "R", "shape": "image", "size": 10, group: 3 },
+    {"font": { "color": "white" }, "id": "R", "image": "icon/R.png", "label": "R", "shape": "image", "size": 10, group: 3 },
 
-    { "color": "#A6E22E", "font": { "color": "white" }, "id": "SQL", "image": "icon/db.png", "label": "SQL", "shape": "image", "size": 10, group: 3 },
+    {"font": { "color": "white" }, "id": "SQL", "image": "icon/db.png", "label": "SQL", "shape": "image", "size": 10, group: 3 },
 
-    { "color": "#A6E22E", "font": { "color": "white" }, "id": "Machine Learning", "label": "Machine Learning", "shape": "triangle", "size": 10, group: 3 },
+    {"font": { "color": "white" }, "id": "Machine Learning", "label": "Machine Learning", "shape": "triangle", "size": 10, group: 3 },
 
-    { "color": "#A6E22E", "font": { "color": "white" }, "id": "Bash & Linux Systems", "label": "Bash & Linux Systems", "shape": "triangle", "size": 10, group: 3 },
+    {"font": { "color": "white" }, "id": "Bash & Linux Systems", "label": "Bash & Linux Systems", "shape": "triangle", "size": 10, group: 3 },
 
-    { "color": "#A6E22E", "font": { "color": "white" }, "id": "Data Structures", "label": "Data Structures", "shape": "triangle", "size": 10, group: 3 },
+    {"font": { "color": "white" }, "id": "Data Structures", "label": "Data Structures", "shape": "triangle", "size": 10, group: 3 },
 
-    { "color": "#A6E22E", "font": { "color": "white" }, "id": "Web Design", "label": "Web Design", "shape": "triangle", "size": 10, group: 3 },
+    {"font": { "color": "white" }, "id": "Web Design", "label": "Web Design", "shape": "triangle", "size": 10, group: 3 },
 
-    { "color": "#A6E22E", "font": { "color": "white" }, "id": "Database Design", "label": "Database Design", "shape": "triangle", "size": 10, group: 3 },
+    {"font": { "color": "white" }, "id": "Database Design", "label": "Database Design", "shape": "triangle", "size": 10, group: 3 },
 
-    { "color": "rgb(255, 241, 118)", "font": { "color": "white" }, "id": "Social Network Analysis", "label": "Social Network Analysis", "shape": "diamond", "size": 10, group: 1 },
+    {"font": { "color": "white" }, "id": "Social Network Analysis", "label": "Social Network Analysis", "shape": "diamond", "size": 10, group: 1 },
 
-    { "color": "rgb(255, 241, 118)", "font": { "color": "white" }, "id": "Social Data Ethics", "label": "Social Data Ethics", "shape": "diamond", "size": 10, group: 1 },
+    {"font": { "color": "white" }, "id": "Social Data Ethics", "label": "Social Data Ethics", "shape": "diamond", "size": 10, group: 1 },
 
-    { "color": "rgb(255, 241, 118)", "font": { "color": "white" }, "id": "Social Media Mining", "label": "Social Media Mining", "shape": "diamond", "size": 10, group: 1 },
+    {"font": { "color": "white" }, "id": "Social Media Mining", "label": "Social Media Mining", "shape": "diamond", "size": 10, group: 1 },
 
-    { "color": "rgb(255, 241, 118)", "font": { "color": "white" }, "id": "Network Visualization", "label": "Network Visualization", "shape": "diamond", "size": 10, group: 1 },
+    {"font": { "color": "white" }, "id": "Network Visualization", "label": "Network Visualization", "shape": "diamond", "size": 10, group: 1 },
 
-    { "color": "rgb(255, 241, 118)", "font": { "color": "white" }, "id": "Network Modeling", "label": "Network Modeling", "shape": "diamond", "size": 10, group: 1 },
+    {"font": { "color": "white" }, "id": "Network Modeling", "label": "Network Modeling", "shape": "diamond", "size": 10, group: 1 },
 
-    { "color": "#78CF8A", "font": { "color": "white" }, "id": "Minor in Mathematics", "label": "Minor in Mathematics", "shape": "dot", "size": 10, group: 2 },
+    {"font": { "color": "white" }, "id": "Minor in Mathematics", "label": "Minor in Mathematics", "shape": "dot", "size": 10, group: 2 },
 
-    { "color": "#78CF8A", "font": { "color": "white" }, "id": "B.Sc. Physics", "label": "B.Sc. Physics", "shape": "dot", "size": 10, group: 2 },
+    {"font": { "color": "white" }, "id": "B.Sc. Physics", "label": "B.Sc. Physics", "shape": "dot", "size": 10, group: 2 },
 
-    { "color": "#78CF8A", "font": { "color": "white" }, "id": "M.Sc. Info. Mgmt Data Science ", "label": "M.Sc. Info. Mgmt Data Science ", "shape": "dot", "size": 10, group: 2 },
+    {"font": { "color": "white" }, "id": "M.Sc. Info. Mgmt Data Science ", "label": "M.Sc. Info. Mgmt Data Science ", "shape": "dot", "size": 10, group: 2 },
 
 ]);
 
@@ -211,8 +211,16 @@ let elementToFindDigitsIn = document.querySelector('pre');
 elementToFindDigitsIn.innerHTML =
     elementToFindDigitsIn
         .textContent
-        .replace(/(\$?\d+)/g, '<span>$1</span>');
-
+        .replace(/(1|0)/g, '<span>$1</span>')
+        .replace("Python", '<span>Python</span>')
+        .replace("Information", '<span>Information</span>')
+        .replace("R@", '<span>R</span>')
+        .replace("SQL@", '<span>SQL</span>')
+        .replace("Algorithms", "<span>Algorithms</span>")
+        .replace("Social", "<span>Social</span>")
+        .replace("Ethic", "<span>Ethic</span>")
+        .replace("Social Media", "<span>Social Media</span>")
+        
 
 
 //Get the canvas HTML element
