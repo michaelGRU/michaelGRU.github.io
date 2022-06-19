@@ -103,7 +103,7 @@
 
     <div id="research_skills" class="tabcontent">
 
-        <div id="mynetwork" class="spec" style="cursor: pointer;"></div>
+        <div id="mynetwork" class="spec"></div>
 
     </div>
 
@@ -111,23 +111,31 @@
 
         <div id="about_me_div" class="spec" style="cursor: default;">
 
-            <div id="about_me_text">I have a background in <span class="highlight">mathematics</span> and <span
-                    class="highlight">data programming</span> – my formal education is in <span
-                    class="highlight">physics</span>, <span class="highlight">computer</span> &
-                <span class="highlight">data science</span>. I research information challenges on <span
-                    class="highlight">social media</span> by applying <span class="highlight">machine
-                    learning</span> and <span class="highlight">social network analysis</span> techniques. More
-                specifically, I focus on <span class="highlight">NLP</span> and <span class="highlight">stochastic
-                    network modeling</span>. My specialization is in mining <span class="highlight">large-scale
-                    social data</span> that could assist <span class="highlight">public policy
-                    decision-making</span>. I hold a master's degree from the UW Information School (advised by Dr.
-                Zack Almquist and Dr. Emma Spiro), where I took courses in machine learning, social statistics, data
-                programming, database and social network analysis - my cumulative GPA was 4.0 on a scale of 4.0.
-                <br><br><br><br>
+            <div id="about_me_text">
 
-                <span>Email </span><span>smw20@pm.me</span><br>
-                <span>PGP key </span><a href="../public key/key.asc" target="_blank">7DEB
-                    7531 FCE4 BA56 16B8 2FDD D529 9A15 9C86 18DE</a><br>
+<pre>
+             /////////////                michaelGRU@github
+         /////////////////////            -----------------
+      ///////*767////////////////         Research Interests:  Computational Social Sciences, 
+    //////7676767676*//////////////                            Social Information Challenges
+   /////76767//7676767//////////////      Research Experience: Social Media, Information Inequality,
+  /////767676///*76767///////////////                          Data Policy and Ethics, Disinformation
+ ///////767676///76767.///7676*///////    
+/////////767676//76767///767676////////   Data Frameworks (Python): TensorFlow, NLTK, Pandas, NetworkX
+//////////76767676767////76767/////////   Data Frameworks (R): Tidyverse, statnet
+///////////76767676//////7676//////////   Database: PostgreSQL, SQL Server
+////////////,7676,///////767///////////   Languages: Python, R, JavaScript, MATLAB, Java
+/////////////*7676///////76////////////   
+///////////////7676////////////////////   Everyday Tools
+ ///////////////7676///767////////////    OS: Pop!_OS 22.04 LTS x86_64
+  //////////////////////'////////////     Shell: zsh 5.8.1
+   //////.7676767676767676767,//////      Text Editor: Vim
+    /////767676767676767676767/////       Software: Gephi, Git, Tableau, VMs
+      ///////////////////////////         
+         /////////////////////            Email: smw20@pm.me
+             /////////////                PGP keyID: 9C8618DE                 
+</pre>
+
             </div>
             <!-- #CF7EA9
             rgb(255, 241, 118)
@@ -162,14 +170,122 @@
     </div>
 
     <button class="tablink" onclick="tab_switcher(event, 'research_skills')" id="defaultOpen">Skills</button>
-    <button id="aboutme" class="tablink" onclick="tab_switcher(event, 'about_me');">About Me</button>
+    <button id="aboutme" class="tablink" onclick="tab_switcher(event, 'about_me');">Profile</button>
     <button class="tablink" onclick="tab_switcher(event, 'contact_info')">Publication</button>
 
 
+
     <!-- <audio id="audio2" style="display:none" src="../img/welcome.mp3"></audio> -->
+    <div id="myModal" class="modal">
+        <span class="close blink_me">&times;</span>
 
 
-    <script src="../js/skill_visual.js"></script>
+
+        <div class="l-wrapper">
+            <div class="l-contents">
+
+                <table align="center">
+
+                    <tr>
+                        <th>Project</th>
+                        <th>Methodologies</th>
+                        <th>Language</th>
+                        <th>Domain</th>
+                    </tr>
+                    <tr>
+                        <td>US Homeless Care Program</td>
+                        <td>Community Detection, Topic Modeling (LDA, STM), Text Vectorization</td>
+                        <td>Python, R</td>
+                        <td>Social Network Analysis, NLP, Social Media</td>
+                    </tr>
+                    <tr>
+                        <td>Disinformation Text Network</td>
+                        <td>Community Detection, Hashtag Network Analysis </td>
+                        <td>Python, R</td>
+                        <td>Social Network Analysis, NLP, Social Media</td>
+                    </tr>
+                    <tr>
+                        <td>Github Follower Network</td>
+                        <td>Data Programming, Social Media API</td>
+                        <td>Python</td>
+                        <td>Social Network Analysis, Social Media</td>
+                    </tr>
+                    <tr>
+                        <td>Stochastic Models: ERGM</td>
+                        <td>Exponential Random Graph Model</td>
+                        <td>R</td>
+                        <td>Social Network Analysis</td>
+                    </tr>
+                    <tr>
+                        <td>Big Data Surveillance Ethics</td>
+                        <td>Data Ethics, US Law, Philosophy</td>
+                        <td>English</td>
+                        <td>Social and Information Science</td>
+                    </tr>
+                    <tr>
+                        <td>Social Redistribution</td>
+                        <td>Data programming, Regression Models</td>
+                        <td>R</td>
+                        <td>Social and Information Science</td>
+                    </tr>
+                    <tr>
+                        <td>Sociological Theories</td>
+                        <td>Classical Sociology</td>
+                        <td>English</td>
+                        <td>Social and Information Science</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Farming</td>
+                        <td>Database Design, Query, ERD, Stored Procedures</td>
+                        <td>SQL</td>
+                        <td>Social and Information Science</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cyberbullying Classification</td>
+                        <td> Deep Learning (RNN, LSTM), ML (XGBoost, SVM, Trees, Ensemble)
+                        </td>
+                        <td>Python</td>
+                        <td>NLP, Social Media</td>
+                    </tr>
+
+                    <tr>
+                        <td>Misinformation Classification</td>
+                        <td> Machine Learning, Naive Bayes, Cross Validation
+                        </td>
+                        <td>Python</td>
+                        <td>NLP, Social Media</td>
+                    </tr>
+                    <tr>
+                        <td>Analyzing Anti-ISIS Tweets</td>
+                        <td>Sentiment Analysis, Co-occurrence Networks</td>
+                        <td>Python</td>
+                        <td>NLP, Social Media</td>
+                    </tr>
+                    <tr>
+                        <td>Text Comparison Algorithm</td>
+                        <td>Data Programming, Data Structures and Algorithms</td>
+                        <td>Java</td>
+                        <td>NLP</td>
+                    </tr>
+                    <div id="caption">I designed and built this website to showcase my work in
+                        <span class="blue">social & computer science</span>. My work leverages applied mathematics,
+                        computational methods, and data visualization to answer social science questions.
+                    </div>
+                </table>
+                <br><br>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <audio id="audio" src="../img/test.mp3" type="audio/mp3"></audio>
+
+
+    <!-- ----------------------- -->
+    <script src="../js/system2.js"></script>
 
 
     <script>
