@@ -216,36 +216,36 @@ elementToFindDigitsIn.innerHTML =
 
 
 //Get the canvas HTML element
-var networkCanvas = document.getElementById("mynetwork").getElementsByTagName("canvas")[0]
-function changeCursor(newCursorStyle) {
-    networkCanvas.style.cursor = newCursorStyle;
-}
-function changeEventCursor(eventName, cursorType) {
-    network.on(eventName, function () {
-        changeCursor(cursorType);
-    });
-}
-network.on('hoverNode', function () {
-    changeCursor('pointer');
-});
-network.on('blurNode', function () {
-    changeCursor('default');
-});
-network.on('hoverEdge', function () {
-    changeCursor('grab');
-});
-network.on('blurEdge', function () {
-    changeCursor('default');
-});
-network.on('dragStart', function () {
-    changeCursor('grabbing');
-});
-network.on('dragging', function () {
-    changeCursor('grabbing');
-});
-network.on('dragEnd', function () {
-    changeCursor('grab');
-});
+// var networkCanvas = document.getElementById("mynetwork").getElementsByTagName("canvas")[0]
+// function changeCursor(newCursorStyle) {
+//     networkCanvas.style.cursor = newCursorStyle;
+// }
+// function changeEventCursor(eventName, cursorType) {
+//     network.on(eventName, function () {
+//         changeCursor(cursorType);
+//     });
+// }
+// network.on('hoverNode', function () {
+//     changeCursor('pointer');
+// });
+// network.on('blurNode', function () {
+//     changeCursor('default');
+// });
+// network.on('hoverEdge', function () {
+//     changeCursor('grab');
+// });
+// network.on('blurEdge', function () {
+//     changeCursor('default');
+// });
+// network.on('dragStart', function () {
+//     changeCursor('grabbing');
+// });
+// network.on('dragging', function () {
+//     changeCursor('grabbing');
+// });
+// network.on('dragEnd', function () {
+//     changeCursor('grab');
+// });
 
 
 
