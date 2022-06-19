@@ -97,7 +97,7 @@ function drawGraph(easingType) {
             "dragNodes": true,
             "hideEdgesOnDrag": false,
             "hideNodesOnDrag": false,
-            "navigationButtons": true
+            // "navigationButtons": true
         },
         "physics": {
             "enabled": true,

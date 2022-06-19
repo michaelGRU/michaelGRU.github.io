@@ -305,7 +305,7 @@ span {
    
 }
 
-div.vis-network div.vis-navigation div.vis-button.vis-up, 
+/* div.vis-network div.vis-navigation div.vis-button.vis-up, 
 div.vis-network div.vis-navigation div.vis-button.vis-down, 
 div.vis-network div.vis-navigation div.vis-button.vis-left, 
 div.vis-network div.vis-navigation div.vis-button.vis-right, 
@@ -327,8 +327,8 @@ div.vis-network div.vis-navigation div.vis-button:hover {
 .vis-button:hover:after {
   font-size: 2em;
   color: white;
-}
-
+} */
+/* 
 .vis-button.vis-up:after {
   content: "▴";
 }
@@ -357,4 +357,4 @@ div.vis-network div.vis-navigation div.vis-button:hover {
 
 .vis-button.vis-zoomExtends:after {
   content: "↻";
-}
+} */
