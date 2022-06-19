@@ -8,8 +8,8 @@ var nodes;
 var network;
 var container;
 var options, data;
-var allNodes;
-var highlightActive = false;
+// var allNodes;
+// var highlightActive = false;
 
 
 // This method is responsible for drawing the graph, returns the drawn network
@@ -129,9 +129,9 @@ function drawGraph() {
 
 
     // get a JSON object
-    allNodes = nodes.get({ returnType: "Object" });
+    // allNodes = nodes.get({ returnType: "Object" });
 
-    network.on("click", neighbourhoodHighlight);
+    // network.on("click", neighbourhoodHighlight);
     return network;
 
 }
@@ -249,60 +249,60 @@ network.on('dragEnd', function () {
 
 
 
-function neighbourhoodHighlight(params) {
-    // if something is selected:
-    if (params.nodes.length > 0) {
-        highlightActive = true;
-        var i, j;
-        var selectedNode = params.nodes[0];
-        var degrees = 1;
+// function neighbourhoodHighlight(params) {
+//     // if something is selected:
+//     if (params.nodes.length > 0) {
+//         highlightActive = true;
+//         var i, j;
+//         var selectedNode = params.nodes[0];
+//         var degrees = 1;
 
-        // mark all nodes as hard to read.
-        for (var nodeId in allNodes) {
-            allNodes[nodeId].color = "rgba(200,200,200,0.5)";
-            if (allNodes[nodeId].hiddenLabel === undefined) {
-                allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
+//         // mark all nodes as hard to read.
+//         for (var nodeId in allNodes) {
+//             allNodes[nodeId].color = "rgba(200,200,200,0.5)";
+//             if (allNodes[nodeId].hiddenLabel === undefined) {
+//                 allNodes[nodeId].hiddenLabel = allNodes[nodeId].label;
 
-            }
-        }
-        var connectedNodes = network.getConnectedNodes(selectedNode);
-        var allConnectedNodes = [];
+//             }
+//         }
+//         var connectedNodes = network.getConnectedNodes(selectedNode);
+//         var allConnectedNodes = [];
 
 
-        // all first degree nodes get their own color and their label back
-        for (i = 0; i < connectedNodes.length; i++) {
-            allNodes[connectedNodes[i]].color = undefined;
-            if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
-                allNodes[connectedNodes[i]].label =
-                    allNodes[connectedNodes[i]].hiddenLabel;
-                allNodes[connectedNodes[i]].hiddenLabel = undefined;
-            }
-        }
+//         // all first degree nodes get their own color and their label back
+//         for (i = 0; i < connectedNodes.length; i++) {
+//             allNodes[connectedNodes[i]].color = undefined;
+//             if (allNodes[connectedNodes[i]].hiddenLabel !== undefined) {
+//                 allNodes[connectedNodes[i]].label =
+//                     allNodes[connectedNodes[i]].hiddenLabel;
+//                 allNodes[connectedNodes[i]].hiddenLabel = undefined;
+//             }
+//         }
 
-        // the main node gets its own color and its label back.
-        allNodes[selectedNode].color = undefined;
-        if (allNodes[selectedNode].hiddenLabel !== undefined) {
-            allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
-            allNodes[selectedNode].hiddenLabel = undefined;
-        }
-    } else if (highlightActive === true) {
-        // reset all nodes
-        for (var nodeId in allNodes) {
-            allNodes[nodeId].color = undefined;
-            if (allNodes[nodeId].hiddenLabel !== undefined) {
-                allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
-                allNodes[nodeId].hiddenLabel = undefined;
-            }
-        }
-        highlightActive = false;
-    }
+//         // the main node gets its own color and its label back.
+//         allNodes[selectedNode].color = undefined;
+//         if (allNodes[selectedNode].hiddenLabel !== undefined) {
+//             allNodes[selectedNode].label = allNodes[selectedNode].hiddenLabel;
+//             allNodes[selectedNode].hiddenLabel = undefined;
+//         }
+//     } else if (highlightActive === true) {
+//         // reset all nodes
+//         for (var nodeId in allNodes) {
+//             allNodes[nodeId].color = undefined;
+//             if (allNodes[nodeId].hiddenLabel !== undefined) {
+//                 allNodes[nodeId].label = allNodes[nodeId].hiddenLabel;
+//                 allNodes[nodeId].hiddenLabel = undefined;
+//             }
+//         }
+//         highlightActive = false;
+//     }
 
-    // transform the object into an array
-    var updateArray = [];
-    for (nodeId in allNodes) {
-        if (allNodes.hasOwnProperty(nodeId)) {
-            updateArray.push(allNodes[nodeId]);
-        }
-    }
-    nodes.update(updateArray);
-}
+//     // transform the object into an array
+//     var updateArray = [];
+//     for (nodeId in allNodes) {
+//         if (allNodes.hasOwnProperty(nodeId)) {
+//             updateArray.push(allNodes[nodeId]);
+//         }
+//     }
+//     nodes.update(updateArray);
+// }
