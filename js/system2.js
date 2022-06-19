@@ -61,7 +61,25 @@ function drawGraph() {
 
 ]);
 
-    edges = new vis.DataSet([{ "from": "My Skills", "to": "Computer Science", "weight": 2 }, { "from": "My Skills", "to": "Mathematics", "weight": 2 }, { "from": "My Skills", "to": "Social Sciences", "weight": 2 }, { "from": "Computer Science", "to": "Machine Learning", "weight": 1 }, { "from": "Computer Science", "to": "Bash & Linux Systems", "weight": 1 }, { "from": "Computer Science", "to": "Data Structures", "weight": 1 }, { "from": "Machine Learning", "to": "Python", "weight": 1 }, { "from": "Machine Learning", "to": "R", "weight": 1 }, { "from": "Machine Learning", "to": "SQL", "weight": 1 }, { "from": "Mathematics", "to": "B.Sc. Physics", "weight": 1 }, { "from": "Mathematics", "to": "M.Sc. Info. Mgmt Data Science ", "weight": 1 }, { "from": "Mathematics", "to": "Minor in Mathematics", "weight": 1 }, { "from": "Social Sciences", "to": "Social Data Ethics", "weight": 1 }, { "from": "Social Sciences", "to": "Social Network Analysis", "weight": 1 }, { "from": "Social Sciences", "to": "Social Media Mining", "weight": 1 }, { "from": "Social Network Analysis", "to": "Network Modeling", "weight": 1 }, { "from": "Social Network Analysis", "to": "Network Visualization", "weight": 1 }, { "from": "Computer Science", "to": "Web Design", "weight": 1 }, { "from": "Web Design", "to": "Database Design", "weight": 1 }]);
+    edges = new vis.DataSet([{ "from": "My Skills", "to": "Computer Science", width: 7}, 
+    { "from": "My Skills", "to": "Mathematics", width: 7}, 
+    { "from": "My Skills", "to": "Social Sciences", width: 7}, 
+    { "from": "Computer Science", "to": "Machine Learning"}, 
+    { "from": "Computer Science", "to": "Bash & Linux Systems"}, 
+    { "from": "Computer Science", "to": "Data Structures"}, 
+    { "from": "Machine Learning", "to": "Python"}, 
+    { "from": "Machine Learning", "to": "R"}, 
+    { "from": "Machine Learning", "to": "SQL"}, 
+    { "from": "Mathematics", "to": "B.Sc. Physics"}, 
+    { "from": "Mathematics", "to": "M.Sc. Info. Mgmt Data Science "}, 
+    { "from": "Mathematics", "to": "Minor in Mathematics"}, 
+    { "from": "Social Sciences", "to": "Social Data Ethics"}, 
+    { "from": "Social Sciences", "to": "Social Network Analysis"}, 
+    { "from": "Social Sciences", "to": "Social Media Mining"}, 
+    { "from": "Social Network Analysis", "to": "Network Modeling"}, 
+    { "from": "Social Network Analysis", "to": "Network Visualization"}, 
+    { "from": "Computer Science", "to": "Web Design"}, 
+    { "from": "Web Design", "to": "Database Design", }]);
 
     // adding nodes and edges to the graph
     data = { nodes: nodes, edges: edges };
@@ -81,6 +99,7 @@ function drawGraph() {
                 }
             },
             shadow:true,
+            width: 2,
             "color": {
                 "inherit": true
             },
