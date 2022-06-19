@@ -4,12 +4,7 @@ credit: https://codepen.io/ChemBioScripting/pen/vgjXyz */
 
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
 
-@font-face {
-    font-family: 'num';
 
-    src: url(https://fonts.gstatic.com/s/oxygen/v5/LC4u_jU27qpsdszDEgeU_3-_kf6ByYO6CLYdB4HQE-Y.woff2) format('woff2');
-    unicode-range: U+30-39;
-}
 
 
 html {
