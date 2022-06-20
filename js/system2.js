@@ -33,15 +33,15 @@ function drawGraph() {
 
     { "font": { "color": "white" }, "id": "SQL", "image": "icon/db.png", "label": "SQL", "shape": "image", "size": 10, group: 3 },
 
-    { "font": { "color": "white" }, "id": "Machine Learning", "label": "Machine Learning", "shape": "triangle", "size": 10, group: 3 },
+    { "font": { "color": "white" }, "id": "Machine Learning", "label": "Machine Learning", "shape": "square", "size": 10, group: 3 },
 
-    { "font": { "color": "white" }, "id": "Bash & Linux Systems", "label": "Bash & Linux Systems", "shape": "triangle", "size": 10, group: 3 },
+    { "font": { "color": "white" }, "id": "Bash & Linux Systems", "label": "Bash & Linux Systems", "shape": "square", "size": 10, group: 3 },
 
-    { "font": { "color": "white" }, "id": "Data Structures", "label": "Data Structures", "shape": "triangle", "size": 10, group: 3 },
+    { "font": { "color": "white" }, "id": "Data Structures", "label": "Data Structures", "shape": "square", "size": 10, group: 3 },
 
-    { "font": { "color": "white" }, "id": "Web Design", "label": "Web Design", "shape": "triangle", "size": 10, group: 3 },
+    { "font": { "color": "white" }, "id": "Web Design", "label": "Web Design", "shape": "square", "size": 10, group: 3 },
 
-    { "font": { "color": "white" }, "id": "Database Design", "label": "Database Design", "shape": "triangle", "size": 10, group: 3 },
+    { "font": { "color": "white" }, "id": "Database Design", "label": "Database Design", "shape": "square", "size": 10, group: 3 },
 
     { "font": { "color": "white" }, "id": "Social Network Analysis", "label": "Social Network Analysis", "shape": "diamond", "size": 10, group: 1 },
 
